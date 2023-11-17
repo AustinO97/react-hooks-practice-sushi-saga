@@ -10,7 +10,7 @@ function SushiContainer() {
     fetch("http://localhost:3001/sushis")
     .then(res => res.json())
     .then(data => setSushi(data))
-  }, )
+  }, [])
 
   const handleShowSushi = () => {
     setVisableSushi((lastSushi) => lastSushi + 4)
